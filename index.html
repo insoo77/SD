@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>지속가능 발전 토론회</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Malgun Gothic',sans-serif;
+}
+
+.top{
+    height:90px;
+    background:#2e7d32;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.top h1{
+    font-size:24px;
+}
+
+select{
+    width:360px;
+    padding:10px;
+    font-size:17px;
+    border-radius:8px;
+}
+
+.bottom{
+    width:100%;
+    height:calc(100vh - 90px);
+    border:none;
+}
+</style>
+
+<script>
+function openPage(){
+    const page = document.getElementById("pageSelect").value;
+    if(page){
+        document.getElementById("contentFrame").src = page;
+    }
+}
+</script>
+</head>
+
+<body>
+
+<div class="top">
+    <h1>🌏 지속가능 발전 토론회</h1>
+
+    <select id="pageSelect" onchange="openPage()">
+        <option value="">주제 선택 ▼</option>
+
+        <option value="01.html">01. 맛있는 라면과 지속가능발전</option>
+        <option value="02.html">02. 모든 원소회의와 지속가능발전</option>
+        <option value="03.html">03. 지속가능발전 동물회의</option>
+        <option value="04.html">04. 한국어 10품사</option>
+        <option value="05.html">05. 한국의 시인</option>
+        <option value="06.html">06. 한국의 아이돌</option>
+        <option value="07.html">07. 물리학 기본 10법칙</option>
+        <option value="08.html">08. 시집시내</option>
+        <option value="09.html">09. 대한민국 광역단체</option>
+        <option value="10.html">10. 아름다운 한국 가곡</option>
+
+        <option value="11.html">11. 맛있는 채소 10가지</option>
+        <option value="12.html">12. 중학교 수학 정리 10개</option>
+        <option value="13.html">13. 소년이 온다</option>
+        <option value="14.html">14. 소년이 온다</option>
+        <option value="15.html">15. 위대한 유산</option>
+        <option value="16.html">16. 홍길동전</option>
+        <option value="17.html">17. 바람과 함께 사라지다</option>
+        <option value="18.html">18. 실공간 위상 성질</option>
+        <option value="19.html">19. 수학 분야</option>
+        <option value="20.html">20. 선형대수학 분야</option>
+
+        <option value="21.html">21. 해석학 분야</option>
+        <option value="22.html">22. 24절기</option>
+        <option value="23.html">23. 사서삼경</option>
+        <option value="24.html">24. 한국 근대 소설작가</option>
+        <option value="25.html">25. 문화예술의 거장 15인</option>
+        <option value="26.html">26. 삼각형</option>
+        <option value="27.html">27. 삼각형</option>
+        <option value="28.html">28. 한국어 음운론</option>
+        <option value="29.html">29. 한국어 음운론</option>
+        <option value="30.html">30. 영어 음운론</option>
+
+        <option value="31.html">31. 열손가락</option>
+        <option value="32.html">32. 태백산맥</option>
+        <option value="33.html">33. 삼국지 인물들</option>
+        <option value="34.html">34. 삼국지 인물들 토론</option>
+        <option value="35.html">35. 촛추 등장인물</option>
+        <option value="36.html">36. 사마천 사기</option>
+        <option value="37.html">37. 구운몽</option>
+    </select>
+</div>
+
+<iframe 
+    id="contentFrame" 
+    class="bottom" 
+    src="01.html">
+</iframe>
+
+</body>
+</html>
